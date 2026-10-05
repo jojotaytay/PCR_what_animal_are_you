@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fredoka:wght@500;600;700&display=swap');
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#fff7df;color:#252525;font-family:Fredoka,system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background-image:radial-gradient(#e8b7b7 1.2px,transparent 1.2px);background-size:25px 25px;opacity:.35;pointer-events:none}
+.shell{width:min(760px,92vw);margin:auto;padding:28px 0 60px;position:relative;z-index:2}.top{display:flex;justify-content:space-between;align-items:center;font:500 12px DM Mono,monospace;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+#sound{border:0;background:transparent;font-size:18px;cursor:pointer}.card{min-height:570px;background:#fffdf7;border:3px solid #252525;border-radius:30px;padding:55px clamp(25px,6vw,65px);box-shadow:9px 9px 0 #252525;display:flex;flex-direction:column;justify-content:center;text-align:center;animation:pop .35s ease}
+.eyebrow{font:500 12px DM Mono,monospace;text-transform:uppercase;letter-spacing:.12em}.emoji{font-size:90px;line-height:1;margin:15px 0;filter:drop-shadow(4px 5px 0 rgba(0,0,0,.12))}
+h1{font-size:clamp(42px,8vw,72px);line-height:.95;margin:12px 0 18px}h2{font-size:clamp(28px,5vw,44px);line-height:1.05;margin:8px 0 25px}p{font-family:DM Mono,monospace;line-height:1.65;margin:8px auto 22px;max-width:570px}
+button.choice,.bigbtn{font:600 18px Fredoka,sans-serif;background:#fff;border:2.5px solid #252525;border-radius:16px;padding:15px 18px;cursor:pointer;box-shadow:4px 4px 0 #252525;transition:.12s}
+button.choice:hover,.bigbtn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #252525;background:#ffe5e5}.bigbtn{background:#f7c8c8;padding:16px 30px;align-self:center}
+.choices{display:grid;gap:13px;text-align:left}.tiny{font-size:11px;opacity:.65;margin-top:20px}.warning{font-size:clamp(45px,9vw,86px)}.resultbox{border:2px dashed #252525;border-radius:18px;padding:18px;margin:10px 0 25px;text-align:left;font:14px DM Mono,monospace;line-height:1.8}
+.loader{height:18px;border:2px solid #252525;border-radius:99px;overflow:hidden;margin:25px auto;width:min(420px,90%)}.loader span{display:block;height:100%;width:0;background:#f7c8c8;animation:load 4.5s linear forwards}
+#floaties span{position:fixed;font-size:30px;animation:fall 2.7s linear forwards;z-index:9;pointer-events:none}
+@keyframes pop{from{opacity:0;transform:scale(.97) translateY(8px)}}@keyframes load{to{width:100%}}@keyframes fall{from{transform:translateY(-10vh) rotate(0)}to{transform:translateY(110vh) rotate(500deg)}}
